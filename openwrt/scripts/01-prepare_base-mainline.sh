@@ -148,9 +148,6 @@ git clone https://$github/sbwml/package_firmware_linux-firmware package/firmware
 rm -rf package/kernel/rtl8812au-ct
 cp -a ../master/openwrt/package/kernel/rtl8812au-ct package/kernel/rtl8812au-ct
 
-# add rtl8812au-ac
-git clone https://$github/sbwml/package_kernel_rtl8812au-ac package/kernel/rtl8812au-ac
-
 # mt76 - main
 rm -rf package/kernel/mt76
 git clone https://$github/sbwml/package_kernel_mt76 -b main package/kernel/mt76 --depth=1
