@@ -14,11 +14,9 @@ Signed-off-by: Chukun Pan <amadeus@jmu.edu.cn>
  drivers/net/wireless/realtek/rtw88/rtw8822b.c | 4 +++-
  1 file changed, 3 insertions(+), 1 deletion(-)
 
-diff --git a/drivers/net/wireless/realtek/rtw88/rtw8822b.c b/drivers/net/wireless/realtek/rtw88/rtw8822b.c
-index 3017a97..06b6efc 100644
 --- a/drivers/net/wireless/realtek/rtw88/rtw8822b.c
 +++ b/drivers/net/wireless/realtek/rtw88/rtw8822b.c
-@@ -820,8 +820,10 @@ static void rtw8822b_config_trx_mode(struct rtw_dev *rtwdev, u8 tx_path,
+@@ -820,8 +820,10 @@ static void rtw8822b_config_trx_mode(str
  			break;
  	}
  
@@ -30,6 +28,3 @@ index 3017a97..06b6efc 100644
  
  	rtw_write_rf(rtwdev, RF_PATH_A, RF_LUTWE, RFREG_MASK, 0x80000);
  	rtw_write_rf(rtwdev, RF_PATH_A, RF_LUTWA, RFREG_MASK, 0x00001);
--- 
-2.42.0
-

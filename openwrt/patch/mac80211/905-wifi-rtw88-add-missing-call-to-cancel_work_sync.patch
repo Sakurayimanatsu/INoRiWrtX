@@ -11,11 +11,9 @@ Signed-off-by: Dmitry Antipov <dmantipov@yandex.ru>
  drivers/net/wireless/realtek/rtw88/main.c | 1 +
  1 file changed, 1 insertion(+)
 
-diff --git a/drivers/net/wireless/realtek/rtw88/main.c b/drivers/net/wireless/realtek/rtw88/main.c
-index c2ddb4d..bbc007c 100644
 --- a/drivers/net/wireless/realtek/rtw88/main.c
 +++ b/drivers/net/wireless/realtek/rtw88/main.c
-@@ -1524,6 +1524,7 @@ void rtw_core_stop(struct rtw_dev *rtwdev)
+@@ -1522,6 +1522,7 @@ void rtw_core_stop(struct rtw_dev *rtwde
  	mutex_unlock(&rtwdev->mutex);
  
  	cancel_work_sync(&rtwdev->c2h_work);
@@ -23,6 +21,3 @@ index c2ddb4d..bbc007c 100644
  	cancel_work_sync(&rtwdev->update_beacon_work);
  	cancel_delayed_work_sync(&rtwdev->watch_dog_work);
  	cancel_delayed_work_sync(&coex->bt_relink_work);
--- 
-2.42.0
-
